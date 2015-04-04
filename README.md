@@ -2,6 +2,10 @@
 
 jquery.sidemenu.js is the simplest side menu plugin (so-called on and off canvas menu).
 
+## Download
+
+- https://github.com/kami30k/jquery.sidemenu.js/archive/master.zip
+
 ## Demo
 
 ![](doc/1.gif)
