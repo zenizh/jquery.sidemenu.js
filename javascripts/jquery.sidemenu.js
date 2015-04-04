@@ -46,12 +46,12 @@
         width:     $html.width()
       });
 
-      $body.animate(_.hash(settings.side, '240px'), settings.speed);
-      $menu.animate(_.hash(settings.side, '0px'),   settings.speed);
+      animate($body, '240px');
+      animate($menu, '0px');
     },
     close: function() {
-      $body.animate(_.hash(settings.side, '0px'),    settings.speed, function() { $(this).removeAttr('style') });
-      $menu.animate(_.hash(settings.side, '-240px'), settings.speed);
+      animate($body, '0px', function() { $(this).removeAttr('style') });
+      animate($menu, '-240px');
     },
     toggle: function() {
       if ($menu.css(settings.side) == '0px') {
@@ -61,6 +61,12 @@
       }
     }
   };
+
+  function animate(object, px, callback) {
+    callback = callback || function() {};
+
+    object.animate(_.hash(settings.side, px), settings.speed, callback);
+  }
 
   var _ = {
     hash: function(key, value) {
