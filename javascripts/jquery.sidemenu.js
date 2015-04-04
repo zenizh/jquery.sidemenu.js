@@ -1,7 +1,7 @@
 ;(function($) {
   var settings = {
-    direction: 'left',
-    speed:     400
+    side:  'left',
+    speed: 400
   };
 
   var $html,
@@ -22,15 +22,15 @@
         width:     $html.width()
       });
 
-      $body.animate(hash(settings.direction, '240px'), settings.speed);
-      $menu.animate(hash(settings.direction, '0px'),   settings.speed);
+      $body.animate(hash(settings.side, '240px'), settings.speed);
+      $menu.animate(hash(settings.side, '0px'),   settings.speed);
     },
     close: function() {
-      $body.animate(hash(settings.direction, '0px'),    settings.speed, function() { $(this).removeAttr('style') });
-      $menu.animate(hash(settings.direction, '-240px'), settings.speed);
+      $body.animate(hash(settings.side, '0px'),    settings.speed, function() { $(this).removeAttr('style') });
+      $menu.animate(hash(settings.side, '-240px'), settings.speed);
     },
     toggle: function() {
-      if ($menu.css(settings.direction) == '0px') {
+      if ($menu.css(settings.side) == '0px') {
         this.close();
       } else {
         this.open();
@@ -53,7 +53,7 @@
   };
 
   $(document).ready(function() {
-    $('[data-role="sidemenu"]').css(settings.direction, '-240px');
+    $('[data-role="sidemenu"]').css(settings.side, '-240px');
 
     $('[data-role="sidemenu-toggle"]').on('click', function() {
       $(this).sidemenu.call($(this.hash));
