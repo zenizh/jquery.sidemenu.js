@@ -1,3 +1,11 @@
+/*
+ * jquery.sidemenu.js
+ * https://github.com/kami30k/jquery.sidemenu.js
+ *
+ * Copyright 2015 kami.
+ * Released under the MIT license.
+ */
+
 ;(function($) {
   var settings = {
     side:  'left',
