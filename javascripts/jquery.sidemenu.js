@@ -62,17 +62,12 @@
     }
   };
 
-  function animate(object, px, callback) {
+  function animate(object, distance, callback) {
     callback = callback || function() {};
 
-    object.animate(_.hash(settings.side, px), settings.speed, callback);
-  }
+    var properties = {};
+    properties[settings.side] = distance;
 
-  var _ = {
-    hash: function(key, value) {
-      var hash = {};
-      hash[key] = value;
-      return hash;
-    }
-  };
+    object.animate(properties, settings.speed, callback);
+  }
 })(jQuery);
