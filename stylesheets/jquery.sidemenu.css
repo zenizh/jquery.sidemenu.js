@@ -1,0 +1,29 @@
+[data-role="sidemenu"] {
+  position: fixed;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #333;
+  font-size: 14px;
+}
+
+[data-role="sidemenu"] ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-role="sidemenu"] li {
+  border-bottom: 1px solid #222;
+}
+
+[data-role="sidemenu"] a {
+  display: block;
+  padding: 12px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+[data-role="sidemenu"] .divider {
+  height: 20px;
+}
