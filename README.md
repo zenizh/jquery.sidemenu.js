@@ -57,6 +57,12 @@ $.sidemenu({
 
 ![](doc/2.gif)
 
+## Methods
+
+| Method | Description |
+| --- | --- |
+| $(selector).sidemenu(action) | Open or close side menu. Default action: `toggle`. |
+
 ## Contributing
 
 1. Fork it ( https://github.com/kami30k/jquery.sidemenu.js/fork )
