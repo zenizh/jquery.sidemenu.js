@@ -61,7 +61,7 @@ $.sidemenu({
 
 | Method | Description |
 | --- | --- |
-| $(selector).sidemenu(action) | Open or close side menu. Default action: `toggle`. |
+| $(selector).sidemenu(action) | Open or close side menu. Available options: `toggle`(Default) / `open` / `close` |
 
 ## Contributing
 
