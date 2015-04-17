@@ -50,7 +50,7 @@ You can customize as follows:
 
 ```js
 $.sidemenu({
-  side: 'right', // Show side menu on right
+  side: 'right', // Which side you want to show the side menu
   speed: 200     // Animation speed
 });
 ```
