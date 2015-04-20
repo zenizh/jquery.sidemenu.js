@@ -43,17 +43,6 @@
     methods[name]();
   };
 
-  // Initialize when document has readied
-  $(document).ready(function() {
-    // Hide side menu
-    $('[data-role="sidemenu"]').css(settings.side, '-240px');
-
-    // Call action with selector which has id same as clicked selector's hash
-    $('[data-role="sidemenu-toggle"]').on('click', function() {
-      $(this).sidemenu.call($(this.hash));
-    });
-  });
-
   // Actions
   var methods = {
     // Open side menu
@@ -88,6 +77,19 @@
   };
 
   /**
+   * Initialize side menu
+   */
+  function initialize() {
+    // Hide side menu
+    $('[data-role="sidemenu"]').css(settings.side, '-240px');
+
+    // Call action with selector which has id same as clicked selector's hash
+    $('[data-role="sidemenu-toggle"]').on('click', function() {
+      $(this).sidemenu.call($(this.hash));
+    });
+  }
+
+  /**
    * Animate side menu
    *
    * @param {Object} object Target of animation
@@ -104,4 +106,16 @@
     // Animate
     object.animate(properties, settings.speed, callback);
   }
+
+  // Initialize when document has readied
+  $(document).ready(function() {
+    initialize();
+
+    // Support for Turbolinks
+    if (typeof Turbolinks !== 'undefined') {
+      $(document).on('page:load', function() {
+        initialize();
+      });
+    }
+  });
 })(jQuery);
