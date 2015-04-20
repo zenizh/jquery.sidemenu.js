@@ -2,6 +2,8 @@
 
 jquery.sidemenu.js is the simplest side menu plugin (so-called on and off canvas menu).
 
+This plugin is well-documented and compatible with Turbolinks.
+
 ## Download
 
 - https://github.com/kami30k/jquery.sidemenu.js/archive/master.zip
