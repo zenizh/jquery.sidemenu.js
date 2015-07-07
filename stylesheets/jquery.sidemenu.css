@@ -25,6 +25,10 @@
   text-decoration: none;
 }
 
+[data-role="sidemenu"] a:hover {
+  color: #ccc;
+}
+
 [data-role="sidemenu"] .divider {
   height: 20px;
 }
