@@ -13,7 +13,14 @@
   function initialize() {
     $('[data-role=sidemenu-toggle]').on('click', function(e) {
       e.preventDefault();
-      $('[data-role=sidemenu-container]').toggleClass('is-active');
+
+      var container = $('[data-role=sidemenu-container]');
+
+      container.toggleClass('is-active');
+
+      if (container.hasClass('is-active')) {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+      }
     });
   }
 
