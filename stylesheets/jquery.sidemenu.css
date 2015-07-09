@@ -9,7 +9,7 @@ body {
 
 [data-role=sidemenu-container] {
   overflow: hidden;
-  height: 100%;
+  min-height: 100%;
 }
 
 [data-role=sidemenu-content] {
