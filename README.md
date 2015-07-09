@@ -2,13 +2,15 @@
 
 jquery.sidemenu.js is the simplest side menu plugin (so-called on and off canvas menu).
 
-This plugin is well-documented and compatible with Turbolinks.
+This plugin is compatible with [Turbolinks](https://github.com/rails/turbolinks).
 
 ## Download
 
 - https://github.com/kami30k/jquery.sidemenu.js/archive/master.zip
 
 ## Demo
+
+The side menu is moving smoothly because it is switched with the device's GPU.
 
 ![](doc/1.gif)
 
@@ -22,48 +24,27 @@ Include `jquery.sidemenu.css`, [jQuery](https://jquery.com/) and `jquery.sidemen
 <script src="jquery.sidemenu.js"></script>
 ```
 
-Add `data-role="sidemenu"` to side menu container, and add `data-role="sidemenu-toggle"` to toggle.
-And add `id` to container, then you can open menu by hash-tag link.
-
-For example:
+Add `data-*` and `#sidemenu` according to the following example:
 
 ```html
-<div id="sidemenu" data-role="sidemenu">
-  <ul>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Menu</a></li>
-    <li class="divider"></li>
-    <li><a href="#sidemenu" data-role="sidemenu-toggle">Close</a></li>
-  </ul>
+<div data-role="sidemenu-container" data-sidemenu-dir="right">
+  <div data-role="sidemenu-content">
+    <div id="sidemenu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a></li>
+        <li class="divider"></li>
+        <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
+      </ul>
+    </div>
+
+    <a href="#" data-role="sidemenu-toggle">Open side menu</a>
+  </div>
 </div>
-
-<a href="#sidemenu" data-role="sidemenu-toggle">Open side menu</a>
 ```
 
-As you see, you can use `li.divider` to divide lists.
-
-That's it.
-In the case of basic usage, no JavaScript code is required.
-
-## Customize
-
-You can customize as follows:
-
-```js
-$.sidemenu({
-  side: 'right', // Which side you want to show the side menu
-  speed: 200     // Animation speed
-});
-```
-
-![](doc/2.gif)
-
-## Methods
-
-| Method | Description |
-| --- | --- |
-| $(selector).sidemenu(action) | Open or close side menu. Available options: `toggle`(Default) / `open` / `close` |
+`data-sidemenu-dir` can be set `left` or `right` direction.
 
 ## Contributing
 

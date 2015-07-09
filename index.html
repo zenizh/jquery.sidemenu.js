@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/jquery.sidemenu.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="javascripts/jquery.sidemenu.js"></script>
-    <script>
+    <script src="javascripts/jquery.sidemenu.min.js"></script>
+    <style>
 
-    $.sidemenu({
-      side: 'right',
-      speed: 200
-    });
+    [data-role=sidemenu-content] > a {
+      display: inline-block;
+      margin: 8px;
+    }
 
-    </script>
+    </style>
   </head>
   <body>
-    <div id="sidemenu" data-role="sidemenu">
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-        <li class="divider"></li>
-        <li><a href="#sidemenu" data-role="sidemenu-toggle">Close</a></li>
-      </ul>
-    </div>
+    <div data-role="sidemenu-container" data-sidemenu-dir="right">
+      <div data-role="sidemenu-content">
+        <div id="sidemenu">
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+            <li class="divider"></li>
+            <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
+          </ul>
+        </div>
 
-    <a href="#sidemenu" data-role="sidemenu-toggle">Open side menu</a>
+        <a href="#" data-role="sidemenu-toggle">Open side menu</a>
+      </div>
+    </div>
   </body>
 </html>
