@@ -6,7 +6,7 @@ This plugin is compatible with [Turbolinks](https://github.com/rails/turbolinks)
 
 ## Download
 
-- https://github.com/kami30k/jquery.sidemenu.js/archive/master.zip
+- https://github.com/kami-zh/jquery.sidemenu.js/archive/master.zip
 
 ## Demo
 
@@ -48,7 +48,7 @@ Add `data-*` and `#sidemenu` according to the following example:
 
 ## Contributing
 
-1. Fork it ( https://github.com/kami30k/jquery.sidemenu.js/fork )
+1. Fork it ( https://github.com/kami-zh/jquery.sidemenu.js/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
