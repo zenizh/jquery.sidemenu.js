@@ -1,6 +1,6 @@
 /*
  * jquery.sidemenu.js
- * https://github.com/kami30k/jquery.sidemenu.js
+ * https://github.com/kami-zh/jquery.sidemenu.js
  *
  * Copyright 2015 kami.
  * Released under the MIT license.
@@ -14,11 +14,11 @@
     $('[data-role=sidemenu-toggle]').on('click', function(e) {
       e.preventDefault();
 
-      var container = $('[data-role=sidemenu-container]');
+      var $container = $('[data-role=sidemenu-container]');
 
-      container.toggleClass('is-active');
+      $container.toggleClass('is-active');
 
-      if (container.hasClass('is-active')) {
+      if ($container.hasClass('is-active')) {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
       }
     });

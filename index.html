@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/jquery.sidemenu.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="javascripts/jquery.sidemenu.min.js"></script>
+    <script src="javascripts/jquery.sidemenu.js"></script>
     <style>
 
     [data-role=sidemenu-content] > a {
@@ -18,19 +18,17 @@
   </head>
   <body>
     <div data-role="sidemenu-container" data-sidemenu-dir="right">
-      <div data-role="sidemenu-content">
-        <div id="sidemenu">
-          <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li class="divider"></li>
-            <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
-          </ul>
-        </div>
-
-        <a href="#" data-role="sidemenu-toggle">Open side menu</a>
+      <div id="sidemenu">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
+        </ul>
       </div>
+
+      <a href="#" data-role="sidemenu-toggle">Open side menu</a>
     </div>
   </body>
 </html>

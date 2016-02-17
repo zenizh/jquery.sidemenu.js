@@ -28,19 +28,17 @@ Add `data-*` and `#sidemenu` according to the following example:
 
 ```html
 <div data-role="sidemenu-container" data-sidemenu-dir="right">
-  <div data-role="sidemenu-content">
-    <div id="sidemenu">
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-        <li class="divider"></li>
-        <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
-      </ul>
-    </div>
-
-    <a href="#" data-role="sidemenu-toggle">Open side menu</a>
+  <div id="sidemenu">
+    <ul>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Menu</a></li>
+      <li class="divider"></li>
+      <li><a href="#" data-role="sidemenu-toggle">Close</a></li>
+    </ul>
   </div>
+
+  <a href="#" data-role="sidemenu-toggle">Open side menu</a>
 </div>
 ```
 
